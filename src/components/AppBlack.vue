@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div><h2 class="container">-- >Content goes here --</h2></div>
+  <div><h2>-- >Content goes here --</h2></div>
 </template>
 
 <style scoped>

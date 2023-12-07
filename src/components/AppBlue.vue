@@ -42,7 +42,7 @@ export default {
 
 <template>
   <nav>
-    <ul class="container">
+    <ul>
       <li v-for="li in listaBlu">
         <div><img :src="li.img" alt="{{ li.nome }}" /></div>
         <div>{{ li.nome }}</div>

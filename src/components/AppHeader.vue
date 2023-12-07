@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-  <header class="container">
+  <header>
     <AppLogo />
     <AppNavBar />
   </header>

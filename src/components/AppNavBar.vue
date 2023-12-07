@@ -3,7 +3,7 @@ export default {
   name: 'Navbar',
   data() {
     return {
-      barranavigazione: [
+      barraNavigazione: [
         { nome: 'Characters', link: '#', target: '_self' },
         { nome: 'Comic', link: '#', target: '_self' },
         { nome: 'Movies', link: '#', target: '_self' },
@@ -23,7 +23,7 @@ export default {
 <template>
   <nav>
     <ul>
-      <li v-for="li in barranavigazione">{{ li.nome }}</li>
+      <li v-for="li in barraNavigazione">{{ li.nome }}</li>
     </ul>
   </nav>
 </template>
