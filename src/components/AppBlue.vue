@@ -42,7 +42,7 @@ export default {
 
 <template>
   <nav>
-    <ul>
+    <ul class="container">
       <li v-for="li in listaBlu">
         <div><img :src="li.img" alt="{{ li.nome }}" /></div>
         <div>{{ li.nome }}</div>
@@ -58,7 +58,7 @@ ul {
   gap: 80px;
   color: white;
   text-transform: uppercase;
-  padding: 75px 40px;
+  padding: 75px;
 }
 
 li {

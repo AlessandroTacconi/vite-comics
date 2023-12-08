@@ -43,32 +43,31 @@ export default {
 
 <template>
   <div class="top-footer">
-    <div class="liste">
-      <div>
-        <h2 class="titolo">DC Comics</h2>
-        <ul class="dc-comics">
-          <li v-for="li in dcComics">{{ li.nome }}</li>
-        </ul>
-        <h2 class="titolo">Shop</h2>
-        <ul>
-          <li v-for="li in dcComics">{{ li.nome }}</li>
-        </ul>
+    <div class="container">
+      <div class="liste">
+        <div>
+          <h2 class="titolo">DC Comics</h2>
+          <ul class="dc-comics">
+            <li v-for="li in dcComics">{{ li.nome }}</li>
+          </ul>
+          <h2 class="titolo">Shop</h2>
+          <ul>
+            <li v-for="li in dcComics">{{ li.nome }}</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="titolo">DC</h2>
+          <ul>
+            <li v-for="li in dc">{{ li.nome }}</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="titolo">Sites</h2>
+          <ul>
+            <li v-for="li in sites">{{ li.nome }}</li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <h2 class="titolo">DC</h2>
-        <ul>
-          <li v-for="li in dc">{{ li.nome }}</li>
-        </ul>
-      </div>
-      <div>
-        <h2 class="titolo">Sites</h2>
-        <ul>
-          <li v-for="li in sites">{{ li.nome }}</li>
-        </ul>
-      </div>
-    </div>
-    <div class="logo-grande">
-      <img src="/img/dc-logo-bg.png" alt="logo-bg-dc" class="logo-img" />
     </div>
   </div>
 </template>
@@ -79,9 +78,17 @@ export default {
   background-size: cover;
 }
 
+.container {
+  background-image: url('/img/dc-logo-bg.png');
+  background-size: 560px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
 .liste {
   display: flex;
   gap: 60px;
+  padding: 45px 0;
 }
 
 li {

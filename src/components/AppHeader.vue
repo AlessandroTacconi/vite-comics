@@ -11,15 +11,20 @@ export default {
 </script>
 
 <template>
-  <header>
-    <AppLogo />
-    <AppNavBar />
+  <header class="container">
+    <div>
+      <AppLogo />
+      <AppNavBar />
+    </div>
   </header>
 </template>
 
 <style scoped>
 header {
   background-color: white;
+}
+
+div {
   display: flex;
   justify-content: space-between;
   align-items: center;

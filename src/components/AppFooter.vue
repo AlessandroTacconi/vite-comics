@@ -1,31 +1,21 @@
 <script>
-import AppLeftFooter from './AppLeftFooter.vue';
-import AppRightFooter from './AppRightFooter.vue';
 import AppTopFooter from './AppTopFooter.vue';
+import AppFooterBottom from './AppFooterBottom.vue';
+
 export default {
   name: 'Footer',
   components: {
-    AppLeftFooter,
-    AppRightFooter,
+    AppTopFooter,
+    AppFooterBottom,
   },
 };
 </script>
 
 <template>
   <footer>
-    <AppLeftFooter />
-    <AppRightFooter />
+    <AppTopFooter />
+    <AppFooterBottom />
   </footer>
 </template>
 
-<style scoped>
-footer {
-  display: flex;
-  text-transform: uppercase;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 0;
-  background-color: #303030;
-  z-index: 2;
-}
-</style>
+<style scoped></style>
