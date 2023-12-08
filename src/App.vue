@@ -17,13 +17,10 @@ export default {
   <AppFooter />
 </template>
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+<style lang="scss">
+@use './style/partials/variables.scss' as *;
+@use './style/partials/typo.scss' as *;
+@use './style/general.scss' as *;
 
 .container {
   margin: 0 auto;

@@ -23,19 +23,38 @@ export default {
 <template>
   <nav>
     <ul>
-      <li v-for="li in barraNavigazione">{{ li.nome }}</li>
+      <li v-for="li in barraNavigazione">
+        {{ li.nome }}
+        <div class="prova"></div>
+      </li>
     </ul>
   </nav>
 </template>
 
-<style scoped>
-li {
-  list-style: none;
-}
+<style scoped lang="scss">
+@use '../style/partials/variables.scss' as *;
 
 ul {
   display: flex;
   gap: 35px;
   text-transform: uppercase;
+  margin: 50px 0;
+  li {
+    list-style: none;
+    position: relative;
+
+    &:hover {
+      color: $blue;
+      cursor: pointer;
+      .prova {
+        background-color: $blue;
+        position: absolute;
+        height: 5px;
+        width: 100%;
+        bottom: 0;
+        eft: 0;
+      }
+    }
+  }
 }
 </style>

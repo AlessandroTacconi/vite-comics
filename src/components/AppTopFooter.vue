@@ -52,7 +52,7 @@ export default {
           </ul>
           <h2 class="titolo">Shop</h2>
           <ul>
-            <li v-for="li in dcComics">{{ li.nome }}</li>
+            <li v-for="li in shop">{{ li.nome }}</li>
           </ul>
         </div>
         <div>
@@ -72,7 +72,9 @@ export default {
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@use '../style/partials/variables.scss' as *;
+
 .top-footer {
   background-image: url('/img/footer-bg.jpg');
   background-size: cover;
@@ -91,6 +93,12 @@ export default {
   padding: 45px 0;
 }
 
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 li {
   list-style: none;
   color: #959595;
@@ -98,7 +106,7 @@ li {
 
 .titolo {
   text-transform: uppercase;
-  color: white;
+  color: $white;
   margin-bottom: 25px;
 }
 
