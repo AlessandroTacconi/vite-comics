@@ -42,18 +42,9 @@ ul {
   li {
     list-style: none;
     position: relative;
-
     &:hover {
       color: $blue;
       cursor: pointer;
-      .prova {
-        background-color: $blue;
-        position: absolute;
-        height: 5px;
-        width: 100%;
-        bottom: 0;
-        eft: 0;
-      }
     }
   }
 }

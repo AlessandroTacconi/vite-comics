@@ -1,21 +1,28 @@
 <script>
+import AppCurrentSeries from './AppCurrentSeries.vue';
+
 export default {
-  name: 'Black bar',
+  name: 'AppBlack',
+  components: {
+    AppCurrentSeries,
+  },
 };
 </script>
 
 <template>
   <div>
-    <h2 class="container">-- >Content goes here --</h2>
+    <jumbotron>
+      <img src="/img/jumbotron.jpg" alt="" />
+    </jumbotron>
+    <AppCurrentSeries />
   </div>
 </template>
 
 <style scoped>
-div {
-  background-color: black;
-  color: white;
-}
-h2 {
-  padding: 65px 0;
+jumbotron {
+  img {
+    max-width: 100vw;
+    display: block;
+  }
 }
 </style>
